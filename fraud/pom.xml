@@ -8,10 +8,10 @@
     </parent>
 
     <groupId>ms</groupId>
-    <artifactId>customer</artifactId>
+    <artifactId>fraud</artifactId>
     <packaging>jar</packaging>
 
-    <name>customer</name>
+    <name>fraud</name>
     <url>http://maven.apache.org</url>
 
     <properties>
