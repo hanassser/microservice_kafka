@@ -1,4 +1,4 @@
-package ms;
+package clients.fraud;
 
 public record FraudCheckResponse(Boolean isFraudster) {
 }

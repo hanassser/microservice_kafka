@@ -1,4 +1,4 @@
-package ms;
+package customer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

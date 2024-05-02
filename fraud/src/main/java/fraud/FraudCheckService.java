@@ -1,4 +1,4 @@
-package ms;
+package fraud;
 
 import org.springframework.stereotype.Service;
 

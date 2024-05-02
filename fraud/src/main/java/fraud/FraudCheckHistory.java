@@ -1,4 +1,4 @@
-package ms;
+package fraud;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
