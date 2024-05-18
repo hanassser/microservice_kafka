@@ -19,7 +19,6 @@
     <module>clients</module>
     <module>notification</module>
     <module>apigw</module>
-    <module>amqp</module>
   </modules>
 
   <properties>
@@ -72,8 +71,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
             <version>${spring.boot.maven.plugin.version}</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>repackage</goal>
+                </goals>
+              </execution>
+            </executions>
           </plugin>
-
         </plugins>
     </pluginManagement>
     <plugins>
