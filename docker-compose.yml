@@ -42,6 +42,25 @@ services:
       - "15672:15672"
     networks:
       - spring
+  eureka-server:
+    image: 66699969/eureka-server:latest
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - spring
+    depends_on:
+      - zipkin
+  apigw:
+    image: 66699969/apigw:latest
+    container_name: apigw
+    ports:
+      - "8083:8083"
+    networks:
+      - spring
+    depends_on:
+      - zipkin
+      - eureka-server
 
 networks:
   postgres:
